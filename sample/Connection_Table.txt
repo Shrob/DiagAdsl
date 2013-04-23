@@ -1,0 +1,1 @@
+*No connection*--- ms*--- mo/s*180.168.55.254*Good connection*60 ms*300 mo/s*192.168.53.1*Good connection*100 ms*400 mo/s*156.168.53.1*

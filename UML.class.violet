@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_17" class="java.beans.XMLDecoder">
+ <object class="com.horstmann.violet.ClassDiagramGraph">
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode0">
+    <void property="attributes">
+     <void property="text">
+      <string>private long minimum;
+private long maximum;
+private long average;
+private int loss;
+private int packetNb;
+private int timeout;
+public String cnxStatus;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>public Ping(String address, int m_packetNb);
+public Ping(InetAddress address, int m_packetNb);
+private void doCommand(InetAddress dstNameIP);
+private InetAddress destinationAddressAcq(String adress);
+
+public long getMinimum();
+public long getMaximum();
+public long getAverage();
+public int getLoss();
+public int getPacketNb();
+public String getCnxStatus();</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Ping</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double0">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double0"/>
+      <double>14.573095199169813</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double0"/>
+      <double>32.223104456583954</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>14.573095199169813</double>
+     <double>32.223104456583954</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode1">
+    <void property="attributes">
+     <void property="text">
+      <string>private URL url;
+private float Flow;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>public NetFlow();
+public void setUrl(URL url);
+public float getFlow();</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>NetFlow</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double1">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double1"/>
+      <double>569.2490986427529</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double1"/>
+      <double>52.38806657167383</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>569.2490986427529</double>
+     <double>52.38806657167383</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode2">
+    <void property="attributes">
+     <void property="text">
+      <string>private ArrayList&lt;String&gt; route:
+private int timeout;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>public Traceroute(String address);
+public Traceroute(InetAddress address);
+public void doCommand(InetAddress dstNameIP);
+private InetAddress destinationAddressAcq(String address);
+public static ArrayList&lt;String&gt; getRoute();</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Traceroute</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double2">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double2"/>
+      <double>372.8158203468838</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double2"/>
+      <double>168.39982630053396</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>372.8158203468838</double>
+     <double>168.39982630053396</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode3">
+    <void property="attributes">
+     <void property="text">
+      <string>private Hashtable infoTable;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>public SysInfo();
+public void showInfos();
+public Hashtable getInfoTable();
+public String getFormatedInfo();</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>SysInfo</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double3">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double3"/>
+      <double>361.92074264381824</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double3"/>
+      <double>38.39703661032071</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>361.92074264381824</double>
+     <double>38.39703661032071</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>private String status;
+private int currentDownStream;
+private int providerDownStream;
+private Node nextJump;
+private URL netProviderTarget;
+private String dignosisSolution;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>public void Diagnosis(int downStream
+   String netProvider);
+public diagnose();
+public String get diagnosisSolution();</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Diagnosis</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double4">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double4"/>
+      <double>1069.1886330013037</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double4"/>
+      <double>28.79244384430207</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>1069.1886330013037</double>
+     <double>28.79244384430207</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>private String status;
+private ArrayList currentInternTable;
+private ArrayList currentExternTable;
+private int downStream;
+private int upStream;
+private String netProvider;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>public Warden();
+public void watchAndMeasure();
+public void doDiagnosis();
+public void updateConnectionHistory();
+public void setStatus(String status);
+public void setCurrentInternTable(ArrayList Table);
+public void setCurrentExternTable(ArrayList Table);
+public void setDownStream(int downstream);
+public void setUpStream(int upstream);
+public void setNetProvider(String netprovider);
+public String getStatus();
+public ArrayList getCurrentInternTable();
+public ArrayList getCurrentExternTable();
+public int getDownStream();
+public int getUpStream();
+public String getNetProvider();</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Warden</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double5">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double5"/>
+      <double>754.3041438921146</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double5"/>
+      <double>6.027731813634205</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>754.3041438921146</double>
+     <double>6.027731813634205</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>private ArrayList localHistoryTable;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>public ConnectionHistory();
+public ArrayList getlocalHistoyTable();
+public void updateTable(ArrayList currentStatus);</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>ConnectionHistory</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double6">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double6"/>
+      <double>766.4214063912476</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double6"/>
+      <double>416.8381920031801</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>766.4214063912476</double>
+     <double>416.8381920031801</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>private ArrayList remoteHistoryTable;
+private URL server;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>public RemoteConnector();
+public ArrayList getRemoteHistoryTable();
+public void sendLocalHistoryTable(ArrayList Table);
+public Boolean testServerAccess();
+</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>RemoteConnector</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double7">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double7"/>
+      <double>763.7647611327924</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double7"/>
+      <double>553.1240226881024</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>763.7647611327924</double>
+     <double>553.1240226881024</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode4">
+    <void property="attributes">
+     <void property="text">
+      <string>private InetAddress IP;
+private Ping ping;
+private Traceroute route;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>public Node(InetAddress address);
+public void testPing();
+public void testRoute();
+public void setIP(InetAddress IP);
+public InetAddress getIP();
+public Ping getPing();
+public Traceroute getRoute();</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Node</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double8">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double8"/>
+      <double>429.39573066910145</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double8"/>
+      <double>323.9821659240013</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>429.39573066910145</double>
+     <double>323.9821659240013</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode5">
+    <void property="attributes">
+     <void property="text">
+      <string>private String address;
+private Ping ping;
+private Traceroute route;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>public URL(String addr);
+public void testPing();
+public void testRoute();
+public void setAddress(String address);
+public String getAddress();
+public Ping getPing();
+public Traceroute getRoute();</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>URL</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double9">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double9"/>
+      <double>419.73155609779695</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double9"/>
+      <double>512.8442322137088</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>419.73155609779695</double>
+     <double>512.8442322137088</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode6">
+    <void property="attributes">
+     <void property="text">
+      <string>private NetworkInterface netInterface; 
+private InetAddress SourceAddress;
+private byte[] SourceMACAddress;
+private byte[] GatewayMACAddress=null;
+private String WanIP;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>public NetParamFetch(String mod);
+private String IpFetchWan();
+private InetAddress sourceAddressAcq();
+private InetAddress destinationAddressAcq(String adress);
+private byte[] sourceMACAcq();
+private byte[] gatewayMACAcq();
+public NetworkInterface getNetInterface();
+public InetAddress getSourceAddress();
+public byte[] getSourceMACAddress();
+public byte[] getGatewayMACAddress();
+public String getLanIP();
+public String getWanIP();</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>NetParamFetch</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double10">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double10"/>
+      <double>7.118976274263474</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double10"/>
+      <double>343.35667500612027</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>7.118976274263474</double>
+     <double>343.35667500612027</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.PackageNode">
+    <void property="contents">
+     <void property="text">
+      <string>A modifier
+au fur et a 
+   mesure
+</string>
+     </void>
+    </void>
+    <void property="name">
+     <string>UI</string>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double11">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double11"/>
+      <double>1126.1791379075767</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double11"/>
+      <double>354.383720270811</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>1126.1791379075767</double>
+     <double>354.383720270811</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.PackageNode">
+    <void method="addChild">
+     <object idref="ClassNode0"/>
+    </void>
+    <void method="addChild">
+     <object idref="ClassNode1"/>
+    </void>
+    <void method="addChild">
+     <object idref="ClassNode2"/>
+    </void>
+    <void method="addChild">
+     <object idref="ClassNode3"/>
+    </void>
+    <void method="addChild">
+     <object idref="ClassNode4"/>
+    </void>
+    <void method="addChild">
+     <object idref="ClassNode5"/>
+    </void>
+    <void method="addChild">
+     <object idref="ClassNode6"/>
+    </void>
+    <void property="name">
+     <string>Tools</string>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>0.0</double>
+     <double>0.0</double>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
